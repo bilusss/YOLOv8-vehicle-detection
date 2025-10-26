@@ -1,0 +1,7 @@
+path: /home/bilus/PycharmProjects/traffic-road-object-detection/dataset_cache
+train: train/images
+val: val/images
+
+nc: 1
+names:
+  0: car

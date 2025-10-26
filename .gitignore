@@ -205,3 +205,25 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# YOLO datasets
+dataset_cache/
+*.cache
+
+# Modele i checkpointy
+*.pt
+*.onnx
+*.tflite
+*.engine
+*.torchscript
+
+# Notebooks i logi
+*.ipynb_checkpoints/
+*.log
+*.csv
+
+# Systemowe
+__pycache__/
+*.pyc
+.DS_Store
+.env

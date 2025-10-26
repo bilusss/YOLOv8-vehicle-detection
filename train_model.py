@@ -197,7 +197,7 @@ test_results = best_model.predict(
     source=val_images,
     conf=0.25,
     iou=0.6,
-    imgsz=640,
+    imgsz=960,
     device=0,
     save=True,
     line_width=2,
@@ -247,21 +247,6 @@ FINAL METRICS:
   - Recall: {metrics.box.mr:.4f}
   - mAP50: {metrics.box.map50:.4f}
   - mAP50-95: {metrics.box.map:.4f}
-
-MODEL USAGE:
-  from ultralytics import YOLO
-  
-  model = YOLO('{best_model_path}')
-  results = model.predict('your_image.jpg', conf=0.25)
-  
-  # On video:
-  results = model.predict('video.mp4', conf=0.25, save=True)
-
-LIVE WEBCAM DEMO:
-  from ultralytics import YOLO
-  
-  model = YOLO('{best_model_path}')
-  results = model.predict(source=0, conf=0.25)  # source=0 = webcam
 
 TRAINING PLOTS:
   Open: {work_dir}/model_final/results.png
